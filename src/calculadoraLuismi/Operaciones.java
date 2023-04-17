@@ -16,4 +16,15 @@ public class Operaciones {
 		
 		return numer * denom;
 	}
+	
+	public double dividir (double numer, double denom){
+		
+		return numer / denom;
+	
+	}
+	
+	public double calcularResto (double numer, double denom) {
+		
+		return numer % denom;
+	}
 }

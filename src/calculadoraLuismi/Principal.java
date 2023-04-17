@@ -78,6 +78,32 @@ public class Principal {
 						System.out.println("Error, mete un número.");
 					}
 					break;
+
+				case 4:
+					try {
+						System.out.println("¿Numerador?");
+						numerador = Double.parseDouble(sc.nextLine());
+						System.out.println("¿Denominador?");
+						denominador = Double.parseDouble(sc.nextLine());
+
+						resultado = op.dividir(numerador, denominador);
+
+						System.out.printf("El resultado es: %.2f\n", resultado);
+
+					} catch (NumberFormatException n) {
+						System.out.println("Error, mete un número.");
+					}catch (ArithmeticException a) {
+						System.out.println("Error, no puedes dividir por 0.");
+					}	
+					break;
+					
+				case 5:
+					
+					break;
+					
+				default:
+					System.out.println("Escoja una opción válida.");
+					break;
 				}
 
 			} catch (NumberFormatException n) {
