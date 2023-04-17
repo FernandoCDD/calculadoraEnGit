@@ -20,6 +20,7 @@ public class Principal {
 				System.out.println("2. Restar");
 				System.out.println("3. Multiplicar");
 				System.out.println("4. Dividir.");
+				System.out.println("5. Calcular el resto.");
 				System.out.println("0. Salir");
 				opcion = Integer.parseInt(sc.nextLine());
 
@@ -98,7 +99,19 @@ public class Principal {
 					break;
 					
 				case 5:
-					
+					try {
+						System.out.println("¿Numerador?");
+						numerador = Double.parseDouble(sc.nextLine());
+						System.out.println("¿Denominador?");
+						denominador = Double.parseDouble(sc.nextLine());
+
+						resultado = op.calcularResto(numerador, denominador);
+
+						System.out.printf("El resultado es: %.2f\n", resultado);
+
+					} catch (NumberFormatException n) {
+						System.out.println("Error, mete un número.");
+					}
 					break;
 					
 				default:
