@@ -12,4 +12,8 @@ public class Operaciones {
 		return numer - denom;
 	}
 	
+	public double multiplicar (double numer, double denom){
+		
+		return numer * denom;
+	}
 }
