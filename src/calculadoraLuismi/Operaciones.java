@@ -6,4 +6,10 @@ public class Operaciones {
 		
 		return numer + denom;
 	}
+	
+	public double restar (double numer, double denom){
+		
+		return numer - denom;
+	}
+	
 }

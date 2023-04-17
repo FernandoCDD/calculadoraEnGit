@@ -45,6 +45,22 @@ public class Principal {
 						}catch(NumberFormatException n) {
 							System.out.println("Error, mete un número.");
 						}
+					break;
+						
+				case 2:
+					try {
+						System.out.println("¿Numerador?");
+						numerador = Double.parseDouble(sc.nextLine());
+						System.out.println("¿Denominador?");
+						denominador=Double.parseDouble(sc.nextLine());
+						
+						resultado = op.restar(numerador, denominador);
+						
+						System.out.printf("El resultado es: %.2f\n",resultado);
+						
+						}catch(NumberFormatException n) {
+							System.out.println("Error, mete un número.");
+						}
 						break;
 				}
 					
